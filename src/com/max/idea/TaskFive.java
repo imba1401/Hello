@@ -7,28 +7,41 @@ public class TaskFive {
     public static void main(String[] args) throws IOException {
 
         //1. Ввести 2 числа с клавиатуры, затем один из символов ‘+’, ‘-’, ‘*’ или ‘/’
-        Scanner in = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Первое число: ");
-        int operand1 = in.nextInt();
+        int operand1 = scanner.nextInt();
         System.out.print("Второе число: ");
-        int operand2 = in.nextInt();
+        int operand2 = scanner.nextInt();
 
-        char sign;
-        System.out.print("Введите один из символов: +,-,*,/: ");
-        sign = (char) System.in.read();
+
+       System.out.print("Введите один из символов: +,-,*,/: ");
+      String sign = scanner.nextLine();
+         sign = scanner.nextLine();
 
         //2. В зависимости от символа вывести в консоль результат выполнения соответствующей арифметической операции.
 
-            int result = 0;
+        int result;
             switch (sign) {
-                case '+': result = operand1 + operand2; break;
-                case '-': result = operand1 - operand2; break;
-                case '*': result = operand1 * operand2; break;
-                case '/': result = operand1 / operand2; break;
-                default :
-                    System.out.println("Символ не распознан, выберете один из вышеуказанных, а пока выведем вам");
+                case "+":
+                    result = operand1 + operand2;
+                    System.out.println(result);
+                    break;
+                case "-": result = operand1 - operand2;
+                    System.out.println(result);
+                    break;
+                case "*": result = operand1 * operand2;
+                    System.out.println(result);
+                    break;
+                case "/":
+                    if (operand2 == 0)
+                        System.out.println("Делить на 0 нельзя");
+                    else {
+                        result = operand1 / operand2;
+                        System.out.println(result);
+                    }
+                    break;
+                default:
+                    System.out.println("Символ не распознан, выберете один из вышеуказанных");
             }
-
-            System.out.println(result);
         }
     }
