@@ -12,9 +12,9 @@ public class TaskSeven {
         System.out.print("Введите размер массива: ");
         int operand1 = in.nextInt();
 
-
+        System.out.println("Введите числа в массив по одному или все сразу (через пробел):");
         for (int s = 0; s < operand1; s++) {
-            System.out.println("Введите числа в массив по одному:");
+            System.out.println(" ");
 
             int q = in.nextInt();
             int array23[] = {q};
@@ -24,7 +24,7 @@ public class TaskSeven {
 
                 // 3. Если массив содержит хотя бы одну из констант, вывести текст "Данное значение имеется в константах".
                 if (q == x || q == y || q == z) {
-                    System.out.println("Данное значение имеется в константах");
+                    System.out.println("Данное значение " + q + " имеется в константах");
                 }
 
                 if (q < x) {
