@@ -16,7 +16,7 @@ public class TaskNine_double {
         double [] arr = new double [operand1];
 
         for (int i = 0; i <= (operand1 - 1); i++) {
-            System.out.println("Введите число (одно):");
+            System.out.println("Введите число (одно, через запятую):");
             double value = in.nextDouble();
             arr[i] = value;
         }
