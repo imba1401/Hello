@@ -39,17 +39,6 @@ public class TaskNine_double {
         }
 
 
-        // String str = Arrays.deepToString(array23);
-        //  System.out.println(str);
-
-
-        //    int total = 0;
-        // Прибавляем к переменной total каждый элемент массива.
-        //    for (int i = 0; i < arr.length; i++) {
-
-        //   total += arr[i];
-
-
 
     }
 }
