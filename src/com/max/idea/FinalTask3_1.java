@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.io.*;
 import java.util.Scanner;
 
-public class FinalTask3 {
+public class FinalTask3_1 {
 
   /*  Напишите программу, где пользователь вводит сначала количество строк n, затем сами строки.
   Среди данных строк найти строку с максимальным количеством различных символов.
