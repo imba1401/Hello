@@ -22,12 +22,10 @@ public class FinalTask1 {
 
         float result = countrubles/rate;
 
-
         if (rate==0){
             System.out.println( "Делить на 0 нельзя, введите настоящий курс доллара");}
         else if (rate>0) {
             System.out.format("%.2f",result);
         }
-
         }
     }
