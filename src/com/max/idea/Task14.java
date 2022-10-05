@@ -11,6 +11,7 @@ public class Task14 {
 
         //2. Из максимального и минимального значения выведите наибольшее по модулю.
 
+
         Random rand = new Random();
 
         int[] array = new int[15];
